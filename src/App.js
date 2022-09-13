@@ -10,7 +10,7 @@ import SearchIcon from '@mui/icons-material/Search'
 
 export default () => {
 
-	const [chatList, setChatList] = useState([{},{},{},{}]);
+	const [chatList, setChatList] = useState([{},{},{},{},{},{},{},{},{},{},{},{}]);
 
 	return (
 		<div className='app-window'>
@@ -19,7 +19,7 @@ export default () => {
 			<img
 				className='header--avatar'
 				src='https://www.whodesigners.com.br/pixit/assets/img/avatars/avatar7_big.png'
-				alt=''
+				alt='avatar'
 			/>
 
 			<div className='header--bottons'>
