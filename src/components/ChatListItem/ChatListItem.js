@@ -1,20 +1,23 @@
 import React from "react";
 import "./ChatListItem.css";
 
-export default () => {
+export default ({onClick, active, data}) => {
     return(
-        <div className="chatListItem">
-            <img className="chatListItem--avatar" src="https://www.whodesigners.com.br/pixit/assets/img/avatars/avatar7_big.png" placeholder="avatar" />
+        <div 
+            className={`chatListItem ${active? 'active': '' }`}
+            onClick={onClick}
+        >
+            <img className="chatListItem--avatar" src={data.img} placeholder="avatar" />
 
             <div className="chatListItem--lines">
                 <div className="chatListItem--line">
-                    <div className="chatListItem--name">hflkashflsahflkashflkashflksahflkshflsahflk</div> 
-                    <div className="chatListItem--date">4:20</div> 
+                    <div className="chatListItem--name">{data.name}</div> 
+                    <div className="chatListItem--date">{data.datas}</div> 
                 </div>
 
                 <div className="chatListItem--line">
                     <div className="chatListItem--lastMsg">
-                        <p>vai se lascar?</p>
+                        <p>{data.msg}</p>
                     </div> 
                 </div>
             </div>

@@ -83,6 +83,16 @@ header{
     overflow-y: auto;
 }
 
-/* .contentarea{
-    
-} */
+.chatlist::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+.chatlist::-webkit-scrollbar-thumb {
+    background-color: blue;
+}
+
+
+
+.contentarea{
+    flex: 1;   
+}
