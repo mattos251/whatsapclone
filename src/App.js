@@ -25,14 +25,14 @@ export default () => {
 			chatId:2, 
 			name:"Wesley safadão",
 			msg: "bora meu fii, hora de tomar uma",
-			datas: Date,
+			datas: "16 hrs",
 			img: "https://midias.correiobraziliense.com.br/_midias/jpg/2022/06/09/675x450/1_wesley_safadao-25835226.jpg?20220609161502?20220609161502",
 		},
 		{
 			chatId:3, 
 			name:"Vitor Fernandes",
 			msg: "Sextou antecipado, bora beber",
-			datas: Date,
+			datas: "18 horas",
 			img: "https://s2.glbimg.com/UgDHIP30LwJVYjESg1iwu82fiU4=/0x0:768x757/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2021/x/o/ljuD9kQhAEV9BODk77JQ/vitor-fernandes.jpg",
 		},
 
