@@ -12,6 +12,8 @@ import SearchIcon from '@mui/icons-material/Search'
 
 export default () => {
 
+	
+
 	const [chatList, setChatList] = useState([
 		
 		{
@@ -39,6 +41,13 @@ export default () => {
 	]);
 
 	const [activeChat, setActiveChat] = useState({})
+	const [user, setUser] = useState({
+
+		id:1234 ,
+		avatar: 'https://avatars.githubusercontent.com/u/65297688?v=4',
+		name: "Lucas Mattos"
+	})
+
 
 	return (
 		<div className='app-window'>
@@ -46,7 +55,7 @@ export default () => {
 				<header>
 				<img
 					className='header--avatar'
-					src='https://avatars.githubusercontent.com/u/65297688?v=4'
+					src={user.avatar}
 					alt='avatar'
 				/>
 
@@ -89,7 +98,9 @@ export default () => {
 
 			<div className='contentarea'>
 				{activeChat.chatId !== undefined && 
-					<ChatWindow/>
+					<ChatWindow  
+						user={user}
+					/>
 				}
 				{activeChat.chatId === undefined &&
 					<ChatIntro/>
